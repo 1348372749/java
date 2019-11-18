@@ -80,6 +80,6 @@ jb2.addActionListener(new ActionListener(){
 });
 ```  
 # 六.运行结果  
-![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
-![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
-![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C1.png)  
+![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C2.png)  
+![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C3.png)
