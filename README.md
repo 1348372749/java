@@ -37,7 +37,7 @@
 ## 五.核心代码  
 ```javascript  
 public String adds() {  
-		int strlenth=strings.length();  
+    int strlenth=strings.length();  
     if(strlenth<7) {  
       System.out.println(strings);  
     }  
@@ -50,4 +50,15 @@ public String adds() {
     }  
     return strings;  
 }  
+public int counts(String s) {
+	int strlenth=strings.length();
+	int slenth=s.length();
+	int count=0;
+	for(int i=0;i<=strlenth-slenth;i++) {
+		if(strings.substring(i,i+slenth).equals(s)) {
+			count=count+1;
+		}
+	}
+	return count;
+}
 ```
