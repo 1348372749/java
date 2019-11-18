@@ -43,10 +43,10 @@ public String adds() {
         }  
         else {  
     	        for(int i=1;i<=strlenth;i++) {  
-      	        if (i%14==0) {  
-        	        strings=strings.substring(0, i-7+i/7-3+i/14)+","+strings.substring(i-7+i/7-3+i/14,i+i/7-3+i/14)+"."+"\n"+strings.substring(i+i/7-3+i/14,strlenth+i/7-3+i/14);  
-            }  
-          }  
+      	                if (i%14==0) {  
+        	                strings=strings.substring(0, i-7+i/7-3+i/14)+","+strings.substring(i-7+i/7-3+i/14,i+i/7-3+i/14)+"."+"\n"+strings.substring(i+i/7-3+i/14,strlenth+i/7-3+i/14);  
+                        }  
+                }  
         }  
         return strings;  
 }  
@@ -67,4 +67,19 @@ jb1.addActionListener(new ActionListener(){
 		JOptionPane.showMessageDialog(null, b);
 	}
 });
-```
+jb2.addActionListener(new ActionListener(){
+	public void actionPerformed(ActionEvent arg0) {
+		if(stuff.getText().trim().length()==0){
+			JOptionPane.showMessageDialog(null, "统计词不能为空");
+			return;
+		}
+		else{
+			JOptionPane.showMessageDialog(null, a.counts(stuff.getText().trim()));
+		}
+	}
+});
+```  
+# 六.运行结果  
+![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
+![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
+![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
