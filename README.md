@@ -33,4 +33,21 @@
 在统计词频的方法中，先用length（）获取查询对象字符串的长度，对整理对其后的字符串遍历，按顺序每次将与要查询的字符串长度一样长的前几个字符提取出来，用equals（）判断与查询的对象是否一样，一样则count+1，不一样则继续。重复此操作直至遍历到字符串末尾。  
 再创建测试类，先用构造函数定义一个内容为《长恨歌》未整理的字符串，然后建立一个窗体加入，添加输入框JTextField获取统计词频对象和两个按钮JButton执行整理对齐和统计词频的操作。先调用构建的整理对齐的方法，两个按钮再分别执行用提示框输出整理对齐的结果和调用统计词频的方法并用提示框输出结果。**  
 ## 四.流程图  
-![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+![image](https://github.com/1348372749/java/blob/master/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
+## 五.核心代码  
+```javascript  
+public String adds() {  
+		int strlenth=strings.length();  
+    if(strlenth<7) {  
+      System.out.println(strings);  
+    }  
+    else {  
+    	for(int i=1;i<=strlenth;i++) {  
+      	if (i%14==0) {  
+        	strings=strings.substring(0, i-7+i/7-3+i/14)+","+strings.substring(i-7+i/7-3+i/14,i+i/7-3+i/14)+"."+"\n"+strings.substring(i+i/7-3+i/14,strlenth+i/7-3+i/14);  
+        }  
+      }  
+    }  
+    return strings;  
+}  
+```
