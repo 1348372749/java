@@ -82,4 +82,6 @@ jb2.addActionListener(new ActionListener(){
 # 六.运行结果  
 ![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C1.png)  
 ![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C2.png)  
-![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C3.png)
+![image](https://github.com/1348372749/java/blob/master/images/%E8%BF%90%E8%A1%8C3.png)  
+# 七.编程感想  
+**在本次实验中，经历了对字符串进行处理，遍历，学会了利用substring（）获取字符串，equals（）判断两个字符串是否相同，以及在编写对字符串遍历循环中插入字符串的流程时，应先设计好思路，先后顺序，再进行操作。在测试类中，在执行建立的窗体中的按钮时，如果监听器中有调用的方法，那么在执行的时候点一次按钮执行一次。在本次实验中，执行整理对齐古诗的过程中，一开始在监听器中调用了方法，导致点一次按钮整理对其一次，使格式越来越乱，最后将方法的调用放在了外部赋值给一个对象，在监听器中直接输出结果。**
