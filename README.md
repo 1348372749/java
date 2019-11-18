@@ -61,4 +61,10 @@ public int counts(String s) {
 	}
 	return count;
 }
+String b=a.adds();
+jb1.addActionListener(new ActionListener(){
+	public void actionPerformed(ActionEvent arg0) {
+		JOptionPane.showMessageDialog(null, b);
+	}
+});
 ```
